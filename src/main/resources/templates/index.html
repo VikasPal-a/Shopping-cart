@@ -12,6 +12,9 @@
 
 
 <style>
+  
+
+    
     .banner-img {
         height: 560px;
         width:100%;
@@ -94,68 +97,79 @@
 <!-- Start Category Module -->
 <style>
   /* product image same size rahe */
-  .product-card img {
-      height: 180px;
-      object-fit: contain;
-  }
+   /* Category images ke liye common style */
+        .product-card {
+            border: none;
+            text-align: center;
+            background: transparent;
+        }
+
+        .product-card .card-img-top {
+            width: 100%;
+            height: 300px;          /* yahan se image ka size bada/chhota kar sakte ho */
+            object-fit: cover;      /* image ko card area me fill karega */
+            padding: 5px!important;  /* extra padding hata di */
+        }
+
+        .product-card .card-body {
+            padding-top: 8px;
+        }
 </style>
 
-<div class="container my-5">
 
-    <!-- Heading -->
-    <div class="d-flex justify-content-between align-items-center mb-3">
+<!-- ================== CATEGORY SECTION ================== -->
+<div class="container-fluid my-5 px-0">
+    
+    <!-- Heading row (thoda side se padding rakhi hai) -->
+    <div class="d-flex justify-content-between align-items-center mb-3 px-3 px-md-5">
         <h4 class="mb-0">Category</h4>
         <a href="#" class="small text-decoration-none text-primary">VIEW ALL</a>
     </div>
 
     <!-- Slider -->
-    <div id="smartphoneCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="categoryCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
 
-            <!-- Slide 1 -->
+            <!-- ===== Slide 1 ===== -->
             <div class="carousel-item active">
-                <div class="row g-3">
+                <div class="row g-0">
 
                     <!-- Card 1 -->
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/category img/p4.jpg" class="card-img-top p-3" alt="Apple iPhone 16">
+                        <div class="card product-card h-100">
+                            <img src="imag/category img/p4.jpg" class="card-img-top" alt="New Phone">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">New Phone</p>
-                                
                             </div>
                         </div>
                     </div>
 
                     <!-- Card 2 -->
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/category img/p6.jpg" class="card-img-top p-3" alt="Vivo T4x 5G">
+                        <div class="card product-card h-100">
+                            <img src="imag/category img/p6.jpg" class="card-img-top" alt="Old Phone">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">Old Phone</p>
-                                
                             </div>
                         </div>
                     </div>
 
                     <!-- Card 3 -->
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/category img/p5.jpg" class="card-img-top p-3" alt="Vivo T4 Lite 5G">
+                        <div class="card product-card h-100">
+                            <img src="imag/category img/p5.jpg" class="card-img-top" alt="Earbuds">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">Earbuds</p>
-                                
                             </div>
                         </div>
                     </div>
 
                     <!-- Card 4 -->
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/category img/p7.jpg" class="card-img-top p-3" alt="OPPO K13 5G">
+                        <div class="card product-card h-100">
+                            <img src="imag/category img/p7.jpg" class="card-img-top" alt="Smart Watch">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">Smart Watch</p>
-                                
                             </div>
                         </div>
                     </div>
@@ -163,84 +177,87 @@
                 </div>
             </div>
 
-            <!-- Slide 2 (aur phones yahan add karo) -->
+            <!-- ===== Slide 2 (extra items) ===== -->
             <div class="carousel-item">
-                <div class="row g-3">
+                <div class="row g-0">
 
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/category img/p8.jpg" class="card-img-top p-3" alt="Galaxy S24 FE 5G">
+                        <div class="card product-card h-100">
+                            <img src="imag/category img/p8.jpg" class="card-img-top" alt="USB Cable">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">USB Cable</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/category img/p9.jpg" class="card-img-top p-3" alt="Galaxy S24 FE 5G">
-                            <div class="card-body p-0 pb-3">
-                                <p class="mb-1 small">Bluetooth device</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/category img/p10.jpg" class="card-img-top p-3" alt="Galaxy S24 FE 5G">
-                            <div class="card-body p-0 pb-3">
-                                <p class="mb-1 small">Power bank</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/category img/p11.jpg" class="card-img-top p-3" alt="Galaxy S24 FE 5G">
-                            <div class="card-body p-0 pb-3">
-                                <p class="mb-1 small">Mobile cover</p>
-                                
                             </div>
                         </div>
                     </div>
 
-                    <!-- baki 3 cards aur add karo -->
-                    <!-- ... -->
+                    <div class="col-6 col-md-3">
+                        <div class="card product-card h-100">
+                            <img src="imag/category img/p9.jpg" class="card-img-top" alt="Bluetooth Device">
+                            <div class="card-body p-0 pb-3">
+                                <p class="mb-1 small">Bluetooth Device</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="card product-card h-100">
+                            <img src="imag/category img/p10.jpg" class="card-img-top" alt="Power Bank">
+                            <div class="card-body p-0 pb-3">
+                                <p class="mb-1 small">Power Bank</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="card product-card h-100">
+                            <img src="imag/category img/p11.jpg" class="card-img-top" alt="Mobile Cover">
+                            <div class="card-body p-0 pb-3">
+                                <p class="mb-1 small">Mobile Cover</p>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
 
         </div>
 
-      
+        <!-- (Optional) Carousel controls
+        <button class="carousel-control-prev" type="button" data-bs-target="#categoryCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#categoryCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        -->
     </div>
 </div>
 
-<!-- Start Category Module -->
+
+<!-- End Category Module -->
 
 <!-- Start Latest Product -->
-
-<div class="container my-5">
+<!-- ================== LATEST PRODUCT SECTION ================== -->
+<div class="container-fluid my-5 px-0">
 
     <!-- Heading -->
-    <div class="d-flex justify-content-between align-items-center mb-3">
+    <div class="d-flex justify-content-between align-items-center mb-3 px-3 px-md-5">
         <h4 class="mb-0">Latest Product</h4>
         <a href="#" class="small text-decoration-none text-primary">VIEW ALL</a>
     </div>
 
     <!-- Slider -->
-    <div id="smartphoneCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="latestProductCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
 
             <!-- Slide 1 -->
             <div class="carousel-item active">
-                <div class="row g-3">
+                <div class="row g-0">
 
                     <!-- Card 1 -->
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/latestProduct/p14.jpg" class="card-img-top p-3" alt="Apple iPhone 17 pro max">
+                        <div class="card product-card border-0 text-center h-100">
+                            <img src="imag/latestProduct/p14.jpg" class="card-img-top" alt="Apple iPhone 17 pro max">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">Apple iPhone 17 pro max</p>
                                 <p class="mb-0 fw-semibold small">From ₹149,999*</p>
@@ -250,8 +267,8 @@
 
                     <!-- Card 2 -->
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/latestProduct/p15.jpg" class="card-img-top p-3" alt="Samsung ultra s25">
+                        <div class="card product-card border-0 text-center h-100">
+                            <img src="imag/latestProduct/p15.jpg" class="card-img-top" alt="Samsung Ultra S25">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">Samsung Ultra S25</p>
                                 <p class="mb-0 fw-semibold small">From ₹25,990*</p>
@@ -261,8 +278,8 @@
 
                     <!-- Card 3 -->
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/latestProduct/p16.jpg" class="card-img-top p-3" alt="OnePlus Nord CE 5">
+                        <div class="card product-card border-0 text-center h-100">
+                            <img src="imag/latestProduct/p16.jpg" class="card-img-top" alt="OnePlus Nord CE 5">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">OnePlus Nord CE 5</p>
                                 <p class="mb-0 fw-semibold small">Just ₹11,249*</p>
@@ -271,26 +288,26 @@
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="col-6 col-md-3 ">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/latestProduct/p17.jpg" class="card-img-top p-3" alt="Vivo V60">
+                    <div class="col-6 col-md-3">
+                        <div class="card product-card border-0 text-center h-100">
+                            <img src="imag/latestProduct/p17.jpg" class="card-img-top" alt="Vivo V60">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">Vivo V60</p>
                                 <p class="mb-0 fw-semibold small">From ₹16,999*</p>
                             </div>
                         </div>
                     </div>
-                    
 
                 </div>
             </div>
 
-            <!-- Slide 2 (aur phones yahan add karo) -->
+            <!-- Slide 2 -->
             <div class="carousel-item">
-                <div class="row g-3">
-                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/latestProduct/p18.jpg" class="card-img-top p-3" alt="Moto G86 Power">
+                <div class="row g-0">
+
+                    <div class="col-6 col-md-3">
+                        <div class="card product-card border-0 text-center h-100">
+                            <img src="imag/latestProduct/p18.jpg" class="card-img-top" alt="Moto G86 Power">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">Moto G86 Power</p>
                                 <p class="mb-0 fw-semibold small">From ₹12,999*</p>
@@ -299,26 +316,28 @@
                     </div>
 
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/latestProduct/p19.jpg" class="card-img-top p-3" alt="Xiaomi Redmi 15">
+                        <div class="card product-card border-0 text-center h-100">
+                            <img src="imag/latestProduct/p19.jpg" class="card-img-top" alt="Xiaomi Redmi 15">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">Xiaomi Redmi 15</p>
                                 <p class="mb-0 fw-semibold small">From ₹15,990</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/latestProduct/p20.jpg" class="card-img-top p-3" alt="Realme 15 Pro">
+                        <div class="card product-card border-0 text-center h-100">
+                            <img src="imag/latestProduct/p20.jpg" class="card-img-top" alt="Realme 15 Pro">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">Realme 15 Pro</p>
                                 <p class="mb-0 fw-semibold small">From ₹19,990</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/latestProduct/p21.jpg" class="card-img-top p-3" alt="Vivo X200 FE">
+                        <div class="card product-card border-0 text-center h-100">
+                            <img src="imag/latestProduct/p21.jpg" class="card-img-top" alt="Vivo X200 FE">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">Vivo X200 FE</p>
                                 <p class="mb-0 fw-semibold small">From ₹19,990</p>
@@ -326,44 +345,40 @@
                         </div>
                     </div>
 
-                    <!-- baki 3 cards aur add karo -->
-                    <!-- ... -->
-
                 </div>
             </div>
 
         </div>
-
-    
-
     </div>
 </div>
+<!-- ================== END LATEST PRODUCT SECTION ================== -->
+
 
 <!-- End Latest Product  -->
 <!-- Start Old Phone -->
-
-<div class="container my-5">
+<!-- ================== OLD PHONE SECTION ================== -->
+<div class="container-fluid my-5 px-0">
 
     <!-- Heading -->
-    <div class="d-flex justify-content-between align-items-center mb-3">
+    <div class="d-flex justify-content-between align-items-center mb-3 px-3 px-md-5">
         <h4 class="mb-0">Old Phone</h4>
         <a href="#" class="small text-decoration-none text-primary">VIEW ALL</a>
     </div>
 
     <!-- Slider -->
-    <div id="smartphoneCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="oldPhoneCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
 
             <!-- Slide 1 -->
             <div class="carousel-item active">
-                <div class="row g-3">
+                <div class="row g-0">
 
                     <!-- Card 1 -->
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/OldProduct/O3.jpg" class="card-img-top p-3" alt="Apple iPhone 13 pro ">
+                        <div class="card product-card h-100 text-center border-0">
+                            <img src="imag/OldProduct/O3.jpg" class="card-img-top" alt="Apple iPhone 13 pro">
                             <div class="card-body p-0 pb-3">
-                                <p class="mb-1 small">Apple iPhone 13 pro </p>
+                                <p class="mb-1 small">Apple iPhone 13 pro</p>
                                 <p class="mb-0 fw-semibold small">From ₹149,999*</p>
                             </div>
                         </div>
@@ -371,8 +386,8 @@
 
                     <!-- Card 2 -->
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/OldProduct/O4.jpg" class="card-img-top p-3" alt="Samsung Galaxy S3">
+                        <div class="card product-card h-100 text-center border-0">
+                            <img src="imag/OldProduct/O4.jpg" class="card-img-top" alt="Samsung Galaxy S3">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">Samsung Galaxy S3</p>
                                 <p class="mb-0 fw-semibold small">From ₹2,990*</p>
@@ -382,8 +397,8 @@
 
                     <!-- Card 3 -->
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/OldProduct/O2.jpg" class="card-img-top p-3" alt="OnePlus 9 pro">
+                        <div class="card product-card h-100 text-center border-0">
+                            <img src="imag/OldProduct/O2.jpg" class="card-img-top" alt="OnePlus 9 pro">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">OnePlus 9 pro</p>
                                 <p class="mb-0 fw-semibold small">Just ₹8,249*</p>
@@ -392,26 +407,26 @@
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="col-6 col-md-3 ">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/OldProduct/O5.jpg" class="card-img-top p-3" alt="Vivov29">
+                    <div class="col-6 col-md-3">
+                        <div class="card product-card h-100 text-center border-0">
+                            <img src="imag/OldProduct/O5.jpg" class="card-img-top" alt="Vivo v29">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">Vivo v29</p>
                                 <p class="mb-0 fw-semibold small">From ₹13,999*</p>
                             </div>
                         </div>
                     </div>
-                    
 
                 </div>
             </div>
 
-            <!-- Slide 2 (aur phones yahan add karo) -->
+            <!-- Slide 2 -->
             <div class="carousel-item">
-                <div class="row g-3">
-                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/OldProduct/O6.jpg" class="card-img-top p-3" alt="Motorola G96">
+                <div class="row g-0">
+
+                    <div class="col-6 col-md-3">
+                        <div class="card product-card h-100 text-center border-0">
+                            <img src="imag/OldProduct/O6.jpg" class="card-img-top" alt="Motorola G96">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">Motorola G96</p>
                                 <p class="mb-0 fw-semibold small">From ₹12,999*</p>
@@ -420,26 +435,28 @@
                     </div>
 
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/latestProduct/p19.jpg" class="card-img-top p-3" alt="Xiaomi Redmi 15">
+                        <div class="card product-card h-100 text-center border-0">
+                            <img src="imag/latestProduct/p19.jpg" class="card-img-top" alt="Xiaomi Redmi 15">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">Xiaomi Redmi 15</p>
                                 <p class="mb-0 fw-semibold small">From ₹15,990</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/OldProduct/O1.jpg" class="card-img-top p-3" alt="Realme 15 ">
+                        <div class="card product-card h-100 text-center border-0">
+                            <img src="imag/OldProduct/O1.jpg" class="card-img-top" alt="Realme 15">
                             <div class="card-body p-0 pb-3">
-                                <p class="mb-1 small">Realme 15 </p>
+                                <p class="mb-1 small">Realme 15</p>
                                 <p class="mb-0 fw-semibold small">From ₹7,990</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/latestProduct/p21.jpg" class="card-img-top p-3" alt="Vivo X200 FE">
+                        <div class="card product-card h-100 text-center border-0">
+                            <img src="imag/latestProduct/p21.jpg" class="card-img-top" alt="Vivo X200 FE">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">Vivo X200 FE</p>
                                 <p class="mb-0 fw-semibold small">From ₹19,990</p>
@@ -447,44 +464,41 @@
                         </div>
                     </div>
 
-                    <!-- baki 3 cards aur add karo -->
-                    <!-- ... -->
-
                 </div>
             </div>
 
         </div>
-
-    
-
     </div>
 </div>
+<!-- ================== END OLD PHONE SECTION ================== -->
+
+
 <!-- End Old Phone -->
  <!-- Start Earbuds -->
  
- 
-<div class="container my-5">
+<!-- ================== EARBUDS SECTION ================== -->
+<div class="container-fluid my-5 px-0">
 
     <!-- Heading -->
-    <div class="d-flex justify-content-between align-items-center mb-3">
+    <div class="d-flex justify-content-between align-items-center mb-3 px-3 px-md-5">
         <h4 class="mb-0">EarBuds</h4>
         <a href="#" class="small text-decoration-none text-primary">VIEW ALL</a>
     </div>
 
     <!-- Slider -->
-    <div id="smartphoneCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="earbudsCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
 
             <!-- Slide 1 -->
             <div class="carousel-item active">
-                <div class="row g-3">
+                <div class="row g-0">
 
                     <!-- Card 1 -->
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/EarbudProduct/E1.jpg" class="card-img-top p-3" alt="Boat ">
+                        <div class="card product-card border-0 text-center h-100">
+                            <img src="imag/EarbudProduct/E1.jpg" class="card-img-top" alt="Boat">
                             <div class="card-body p-0 pb-3">
-                                <p class="mb-1 small">Boat </p>
+                                <p class="mb-1 small">Boat</p>
                                 <p class="mb-0 fw-semibold small">From ₹1,499*</p>
                             </div>
                         </div>
@@ -492,8 +506,8 @@
 
                     <!-- Card 2 -->
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/EarbudProduct/E2.jpg" class="card-img-top p-3" alt="JBL">
+                        <div class="card product-card border-0 text-center h-100">
+                            <img src="imag/EarbudProduct/E2.jpg" class="card-img-top" alt="JBL">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">JBL</p>
                                 <p class="mb-0 fw-semibold small">From ₹990*</p>
@@ -503,8 +517,8 @@
 
                     <!-- Card 3 -->
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/EarbudProduct/E3.jpg" class="card-img-top p-3" alt="Sony">
+                        <div class="card product-card border-0 text-center h-100">
+                            <img src="imag/EarbudProduct/E3.jpg" class="card-img-top" alt="Sony">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">Sony</p>
                                 <p class="mb-0 fw-semibold small">Just ₹859*</p>
@@ -513,26 +527,26 @@
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="col-6 col-md-3 ">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/EarbudProduct/E4.jpg" class="card-img-top p-3" alt="Bose">
+                    <div class="col-6 col-md-3">
+                        <div class="card product-card border-0 text-center h-100">
+                            <img src="imag/EarbudProduct/E4.jpg" class="card-img-top" alt="Bose">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">Bose</p>
                                 <p class="mb-0 fw-semibold small">From ₹999*</p>
                             </div>
                         </div>
                     </div>
-                    
 
                 </div>
             </div>
 
-            <!-- Slide 2 (aur phones yahan add karo) -->
+            <!-- Slide 2 -->
             <div class="carousel-item">
-                <div class="row g-3">
-                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/EarbudProduct/E5.jpg" class="card-img-top p-3" alt="Realme">
+                <div class="row g-0">
+
+                    <div class="col-6 col-md-3">
+                        <div class="card product-card border-0 text-center h-100">
+                            <img src="imag/EarbudProduct/E5.jpg" class="card-img-top" alt="Realme">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">Realme</p>
                                 <p class="mb-0 fw-semibold small">From ₹999*</p>
@@ -541,26 +555,28 @@
                     </div>
 
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/EarbudProduct/E6.jpg" class="card-img-top p-3" alt="Noise">
+                        <div class="card product-card border-0 text-center h-100">
+                            <img src="imag/EarbudProduct/E6.jpg" class="card-img-top" alt="Noise">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">Noise</p>
                                 <p class="mb-0 fw-semibold small">From ₹549</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/EarbudProduct/E7.jpg" class="card-img-top p-3" alt="Oneplus ">
+                        <div class="card product-card border-0 text-center h-100">
+                            <img src="imag/EarbudProduct/E7.jpg" class="card-img-top" alt="OnePlus">
                             <div class="card-body p-0 pb-3">
-                                <p class="mb-1 small">Oneplus </p>
+                                <p class="mb-1 small">OnePlus</p>
                                 <p class="mb-0 fw-semibold small">From ₹799</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-6 col-md-3">
-                        <div class="card border-0 text-center product-card">
-                            <img src="imag/EarbudProduct/E8.jpg" class="card-img-top p-3" alt="Smasung">
+                        <div class="card product-card border-0 text-center h-100">
+                            <img src="imag/EarbudProduct/E8.jpg" class="card-img-top" alt="Samsung">
                             <div class="card-body p-0 pb-3">
                                 <p class="mb-1 small">Samsung</p>
                                 <p class="mb-0 fw-semibold small">From ₹990</p>
@@ -568,18 +584,14 @@
                         </div>
                     </div>
 
-                    <!-- baki 3 cards aur add karo -->
-                    <!-- ... -->
-
                 </div>
             </div>
 
         </div>
-
-    
-
     </div>
 </div>
+<!-- ================== END EARBUDS SECTION ================== -->
+
  <!-- End Earbuds -->
 
 </section>
